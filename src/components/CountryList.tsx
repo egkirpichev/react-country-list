@@ -1,10 +1,14 @@
-import React from 'react'
+import { ICountry } from '../types'
 import { CountryItem } from './CountryItem'
 
-export const CountryList = () => {
+interface IProps {
+	countries: ICountry[]
+}
+
+export const CountryList = ({countries}: IProps) => {
 	return (
-		<div>
-			<CountryItem/>
-		</div>
+		<ul className='list-group'>
+			{countries.map(country => <CountryItem country={country}/>)}
+		</ul>
 	)
 }
