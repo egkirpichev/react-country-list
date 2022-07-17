@@ -1,4 +1,4 @@
-export interface ICountry {
+interface ICountry {
 	flag: string,
 	name: string,
 	capital: string, 
@@ -7,7 +7,7 @@ export interface ICountry {
 	population: number, 
 }
 
-export interface ICountryApi {
+interface ICountryApi {
 		flags: {
 				png: string,
 				svg: string
@@ -24,9 +24,9 @@ export interface ICountryApi {
 }
 
 
-export type BadgeLabel = "population" | "area"
+type BadgeLabel = "population" | "area"
 
-export enum Color {
+enum Color {
 	primary = "primary",
 	secondary = "secondary",  
 	success = "success",
@@ -36,3 +36,6 @@ export enum Color {
 	light = "light",
 	dark = "dark",
 }
+
+export { Color }
+export type { ICountry, ICountryApi, BadgeLabel }

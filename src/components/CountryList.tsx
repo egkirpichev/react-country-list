@@ -5,10 +5,13 @@ interface IProps {
 	countries: ICountry[]
 }
 
-export const CountryList = ({countries}: IProps) => {
+const CountryList = ({countries}: IProps) => {
 	return (
 		<ul className='list-group'>
 			{countries.map(country => <CountryItem country={country}/>)}
 		</ul>
 	)
 }
+
+
+export { CountryList }

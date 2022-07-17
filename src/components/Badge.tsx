@@ -6,7 +6,7 @@ interface IProps {
 	data: number
 }
 
-export const Badge = ({color, label, data}: IProps) => {
+const Badge = ({color, label, data}: IProps) => {
 
 	let classname: string = ""
 	if (color === "primary") {
@@ -17,3 +17,5 @@ export const Badge = ({color, label, data}: IProps) => {
 		<p className={classname}>{label}: {data}</p>
 	)
 }
+
+export { Badge }

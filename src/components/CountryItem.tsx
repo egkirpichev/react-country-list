@@ -5,7 +5,7 @@ interface IProps {
 	country: ICountry
 }
 
-export const CountryItem = ({country}: IProps) => {
+const CountryItem = ({country}: IProps) => {
 	return (
 		<li className='list-group-item d-flex justify-content-between align-items-center'>
 			<img className='col-1' src={country.flag} alt="country_flag" />
@@ -17,3 +17,5 @@ export const CountryItem = ({country}: IProps) => {
 		</li>
 	)
 }
+
+export { CountryItem }
