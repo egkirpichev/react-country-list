@@ -10,8 +10,8 @@ function App() {
 
 
 	return (
-    <div className="App container">
-			<h1 className="">Country List</h1>
+    <div className="app container">
+			<h1 className="p-3">Country List</h1>
 
 			<CountryList countries={transformedCountries}/>
     </div>
