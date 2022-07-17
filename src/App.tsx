@@ -1,20 +1,17 @@
 import { getTranformedCountries } from "./mappers";
-import countries from "./data/country-data.json"
+import countries from "./data/country-data.json";
 import { CountryList } from "./components/CountryList";
 
-
 const App = () => {
+  const transformedCountries = getTranformedCountries(countries);
 
-	const transformedCountries = getTranformedCountries(countries)
-
-
-	return (
+  return (
     <div className="app container">
-			<h1 className="p-3">Country List</h1>
+      <h1 className="p-3">Country List</h1>
 
-			<CountryList countries={transformedCountries}/>
+      <CountryList countries={transformedCountries} />
     </div>
   );
-}
+};
 
-export {App};
+export { App };

@@ -1,17 +1,18 @@
-import { ICountry } from '../types'
-import { CountryItem } from './CountryItem'
+import { ICountry } from "../types";
+import { CountryItem } from "./CountryItem";
 
 interface IProps {
-	countries: ICountry[]
+  countries: ICountry[];
 }
 
-const CountryList = ({countries}: IProps) => {
-	return (
-		<ul className='list-group'>
-			{countries.map(country => <CountryItem country={country}/>)}
-		</ul>
-	)
-}
+const CountryList = ({ countries }: IProps) => {
+  return (
+    <ul className="list-group">
+      {countries.map((country) => (
+        <CountryItem country={country} />
+      ))}
+    </ul>
+  );
+};
 
-
-export { CountryList }
+export { CountryList };
