@@ -1,10 +1,9 @@
 import { getTranformedCountries } from "./mappers";
 import countries from "./data/country-data.json"
-import { ICountry, ICountryApi } from "./types";
 import { CountryList } from "./components/CountryList";
 
 
-function App() {
+const App = () => {
 
 	const transformedCountries = getTranformedCountries(countries)
 
