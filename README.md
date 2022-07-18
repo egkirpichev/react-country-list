@@ -10,7 +10,7 @@
 
 
 ### Page deployment link
-
+https://egkirpichev.github.io/react-country-list/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
