@@ -1,7 +1,7 @@
-import { BadgeLabel } from "../types";
+import { BadgeLabel, Color } from "../types";
 
 interface IProps {
-  color: string;
+  color: Color;
   label: BadgeLabel;
   data: number;
 }
