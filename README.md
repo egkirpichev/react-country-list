@@ -3,7 +3,11 @@
 ## Country list
 
 
-### Simple layout containing basic country data. Built with: 
+### Simple layout containing basic country data
+
+![image](https://user-images.githubusercontent.com/99477750/179613891-925f144c-8db2-420b-a39d-c05f2e145d64.png)
+
+Built with: 
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
