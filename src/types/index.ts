@@ -15,7 +15,9 @@ interface ICountryApi {
   name: {
     common: string;
     official: string;
-    nativeName: {[key: string]: string};
+    nativeName: {
+			[key: number]: {official: string, common: string},
+		};
   };
   capital: string[];
   region: string;
