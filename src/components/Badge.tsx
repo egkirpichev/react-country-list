@@ -7,13 +7,9 @@ interface IProps {
 }
 
 const Badge = ({ color, label, data }: IProps) => {
-  let classname: string = "";
-  if (color === "primary") {
-    classname = "badge bg-primary m-0 p-2 col-2";
-  } else classname = "badge bg-secondary m-0 p-2 col-2";
 
   return (
-    <p className={classname}>
+    <p className={`badge bg-${color} m-0 p-2 col-2`}>
       {label}: {data}
     </p>
   );
