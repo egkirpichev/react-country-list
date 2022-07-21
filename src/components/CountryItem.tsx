@@ -12,7 +12,10 @@ const CountryItem = ({ country }: IProps) => {
       <p className="m-0 col-1">{country.name}</p>
       <p className="m-0 col-1">{country.capital}</p>
       <p className="m-0 col-1">{country.region}</p>
-      <Badge color={Color.primary} label="area" data={country.area} />
+      <Badge 
+				color={Color.primary}
+				label="area"
+				data={country.area} />
       <Badge
         color={Color.secondary}
         label="population"

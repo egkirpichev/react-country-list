@@ -7,18 +7,22 @@ interface ICountry {
   population: number;
 }
 
+interface ICoyntryNativeName {
+  [key: string]: { official: string; common: string } | undefined;
+}
+
+interface ICoyntryName {
+  common: string;
+  official: string;
+  nativeName: ICoyntryNativeName;
+}
+
 interface ICountryApi {
   flags: {
     png: string;
     svg: string;
   };
-  name: {
-    common: string;
-    official: string;
-    nativeName: {
-			[key: number]: {official: string, common: string},
-		};
-  };
+  name: ICoyntryName;
   capital: string[];
   region: string;
   area: number;
